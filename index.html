@@ -1,0 +1,44 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="./style1.css">    
+</head>    
+<body>    
+    <h2>Login Page</h2><br>    
+    <div class="login">    
+       
+        <label><b>User Name</b></label> 
+
+        <input type="text" name="Uname" id="Uname" placeholder="Username"><br><br>    
+
+        <label><b>Password </b></label>
+
+        <input type="Password" name="Pass" id="Pass" placeholder="Password"><br><br>   
+
+        <button name="log" id="log" onclick="myfun()">Login</button><br><br>    
+
+        <input type="checkbox" id="check"><span>Remember me</span><br><br>
+        
+        Forgot<a href="#">Password</a>    
+    
+</div> 
+<script>
+    function myfun(){
+        
+      var user_name=document.getElementById("Uname").value; 
+      var password=document.getElementById("Pass").value;
+    
+       if(user_name=="user"&&password=="123"){
+           
+           var res=window.location.replace("./main.html");
+           
+        }
+       else{
+           alert("Inavlid Username or Password");
+        }
+
+    }
+</script>   
+</body>    
+</html>    
